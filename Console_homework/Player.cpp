@@ -56,3 +56,29 @@ int Player::getTeam_Number()
 {
 	return this->team_number;
 }
+
+void Player::print()
+{
+	{
+		cout << "Name : " << this->player_name << endl
+			 << "Player number : "<<this->player_number << endl
+		     << "Level : " << this->level<<endl
+			 << "Number of team : " <<this->team_number<<endl;
+	}
+}
+
+void Player::high_level(Player* other)
+{
+	if (this->level > other->level)
+	{
+		cout << "Name:" << this->player_name << " have higher level \n";
+	}
+	else if (this->level < other->level)
+	{
+		cout << "Name:" << other->player_name << " have higher level \n";
+	}
+	else
+	{
+		cout << "Players have the same level! \n";
+	}
+}

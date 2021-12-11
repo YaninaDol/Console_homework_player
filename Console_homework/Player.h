@@ -21,6 +21,8 @@ public:
 	int getLevel();
 	int getTeam_Number();
 
+	void print();
+	void high_level(Player* other);
 
 	~Player()
 	{
