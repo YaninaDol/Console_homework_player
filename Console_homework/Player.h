@@ -11,6 +11,10 @@ class Player
 public:
 	Player();
 	Player(char* new_name, int new_pl_number, int new_level, int new_team);
+	void setName(char* new_name);
+	void setPl_Number(int new_pl_number);
+	void setLevel(int new_level);
+	void setTeam_Number(int new_team);
 
 	~Player()
 	{
