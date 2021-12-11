@@ -36,3 +36,23 @@ void Player::setTeam_Number(int new_team)
 {
 	this->team_number = new_team;
 }
+
+char* Player::getName()
+{
+	return this->player_name;
+}
+
+int Player::getPl_Number()
+{
+	return this->player_number;
+}
+
+int Player::getLevel()
+{
+	return this->level;
+}
+
+int Player::getTeam_Number()
+{
+	return this->team_number;
+}

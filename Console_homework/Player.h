@@ -16,6 +16,12 @@ public:
 	void setLevel(int new_level);
 	void setTeam_Number(int new_team);
 
+	char* getName();
+	int getPl_Number();
+	int getLevel();
+	int getTeam_Number();
+
+
 	~Player()
 	{
 		delete[](player_name);
