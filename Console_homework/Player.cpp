@@ -3,7 +3,7 @@
 
 Player::Player()
 {
-	this->player_name = nullptr;
+	this->player_name = (char*)" ";
 	this->player_number = 0;
 	this->level = 0;
 	this->team_number = 0;
@@ -19,7 +19,7 @@ Player::Player(char* new_name, int new_pl_number, int new_level, int new_team)
 
 void Player::setName(char* new_name)
 {
-	strcpy_s(player_name, 30, new_name);
+	this->player_name = new_name;
 }
 
 void Player::setPl_Number(int new_pl_number)
@@ -71,14 +71,14 @@ void Player::high_level(Player* other)
 {
 	if (this->level > other->level)
 	{
-		cout << "Name:" << this->player_name << " have higher level \n";
+		cout << this->player_name << " have higher level! \n";
 	}
 	else if (this->level < other->level)
 	{
-		cout << "Name:" << other->player_name << " have higher level \n";
+		cout << other->player_name << " have higher level! \n";
 	}
 	else
 	{
-		cout << "Players have the same level! \n";
+		cout << " Players have the same level! \n";
 	}
 }
